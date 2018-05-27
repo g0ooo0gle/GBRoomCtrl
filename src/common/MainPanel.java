@@ -23,7 +23,7 @@ public class MainPanel extends JPanel {
 		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 
-		JLabel NameLabel = new JLabel("TestPanel");
+		JLabel NameLabel = new JLabel("ただのボタンパネル");
 		GridBagConstraints gbc_NameLabel = new GridBagConstraints();
 		gbc_NameLabel.insets = new Insets(0, 0, 5, 5);
 		gbc_NameLabel.gridx = 0;
