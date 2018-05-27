@@ -11,14 +11,14 @@ public class Loadtest {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		try {
-			IniFileUtil  iniFileUtil = new IniFileUtil();
+			IniFileUtil iniFileUtil = new IniFileUtil();
 			String message;
 			message = iniFileUtil.getProperty("marimo");
-			if(message == null || message.isEmpty()) {
+			if (message == null || message.isEmpty()) {
 				System.out.println("新規作成");
-				iniFileUtil.setProperty("marimo", "test","mario");
+				iniFileUtil.setProperty("marimo", "test", "mario");
 				System.out.println(iniFileUtil.getProperty("marimo"));
-			}else {
+			} else {
 				System.out.println(message);
 			}
 
