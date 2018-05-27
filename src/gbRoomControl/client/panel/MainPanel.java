@@ -1,4 +1,4 @@
-package gbRoomControl.client.common;
+package gbRoomControl.client.panel;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
