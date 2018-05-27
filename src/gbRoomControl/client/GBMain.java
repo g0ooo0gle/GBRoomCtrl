@@ -1,4 +1,4 @@
-package gbRoomControl;
+package gbRoomControl.client;
 
 import java.awt.EventQueue;
 import java.awt.FlowLayout;
@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.border.EmptyBorder;
 
-import common.MainPanel;
+import gbRoomControl.client.common.MainPanel;
 
 public class GBMain extends JFrame {
 
