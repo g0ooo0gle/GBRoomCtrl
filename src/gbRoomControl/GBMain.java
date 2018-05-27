@@ -2,6 +2,7 @@ package gbRoomControl;
 
 import java.awt.EventQueue;
 import java.awt.FlowLayout;
+import java.awt.GridBagLayout;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -39,14 +40,15 @@ public class GBMain extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
+		contentPane.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
 		
 		MainPanel mainPanel = new  MainPanel();
+		GridBagLayout gridBagLayout = (GridBagLayout) mainPanel.getLayout();
+		gridBagLayout.columnWeights = new double[]{0.0, 1.0};
 		
 		JScrollPane scrollPane = new JScrollPane();
 		
 		scrollPane.setViewportView(mainPanel);
-		
 		contentPane.add(scrollPane);
 	}
 

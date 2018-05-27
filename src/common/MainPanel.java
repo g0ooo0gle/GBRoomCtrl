@@ -9,7 +9,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 
 public class MainPanel extends JPanel {
 
@@ -18,10 +17,10 @@ public class MainPanel extends JPanel {
 	 */
 	public MainPanel() {
 		GridBagLayout gridBagLayout = new GridBagLayout();
-		gridBagLayout.columnWidths = new int[]{0, 0, 0};
+		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0};
-		gridBagLayout.columnWeights = new double[]{1.0, 0.0, Double.MIN_VALUE};
-		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 1.0, Double.MIN_VALUE};
+		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 
 		JLabel NameLabel = new JLabel("TestPanel");
@@ -50,7 +49,7 @@ public class MainPanel extends JPanel {
 			}
 		});
 		GridBagConstraints gbc_btnOff = new GridBagConstraints();
-		gbc_btnOff.insets = new Insets(0, 0, 5, 0);
+		gbc_btnOff.insets = new Insets(0, 0, 5, 5);
 		gbc_btnOff.gridx = 1;
 		gbc_btnOff.gridy = 1;
 		add(btnOff, gbc_btnOff);
@@ -64,21 +63,10 @@ public class MainPanel extends JPanel {
 
 		JButton btnOff_1 = new JButton("OFF");
 		GridBagConstraints gbc_btnOff_1 = new GridBagConstraints();
-		gbc_btnOff_1.insets = new Insets(0, 0, 5, 0);
+		gbc_btnOff_1.insets = new Insets(0, 0, 5, 5);
 		gbc_btnOff_1.gridx = 1;
 		gbc_btnOff_1.gridy = 2;
 		add(btnOff_1, gbc_btnOff_1);
-		
-		JScrollPane scrollPane = new JScrollPane();
-		GridBagConstraints gbc_scrollPane = new GridBagConstraints();
-		gbc_scrollPane.insets = new Insets(0, 0, 0, 5);
-		gbc_scrollPane.fill = GridBagConstraints.BOTH;
-		gbc_scrollPane.gridx = 0;
-		gbc_scrollPane.gridy = 3;
-		add(scrollPane, gbc_scrollPane);
-		
-		JPanel panel = new JPanel();
-		scrollPane.setColumnHeaderView(panel);
 
 	}
 
